@@ -1,0 +1,359 @@
+#managername{
+	color:red;
+}
+/* body部分css */
+#body{
+	height: 570px;
+	background: #F0EDE4;
+}
+
+#left_nav{
+	width:190px;
+	height:100%;
+	float:left;
+	color:#BFAB79;
+	border-right: 5px solid #FAFAF8;
+}
+#left_nav a{
+	display: block;
+text-decoration: none;
+color: #AE8749;
+}
+
+#left_nav a:hover{
+	width:180px;
+	border-left:10px solid #808000;
+	background:#244559;
+	color:#fff;
+}
+
+.m_managers,.m_users,.m_books{
+	width:190px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	font-size:16px;
+	cursor:pointer;
+	font-weight: bold;
+}
+
+
+
+
+#right{
+	width:870px;
+	height:100%;
+	float:right;
+}
+
+/* 图书管理 */
+.m_b_box{
+	display:block;
+	color:#fafafa;
+}
+.m_b_box h2 , .m_u_box h2 , .m_m_box h2{
+	height: 40px;
+font-size: 22px;
+line-height: 40px;
+text-indent: 60px;
+border-bottom: 3px solid #FDF5F5;
+margin: 13px 0;
+}
+
+
+.m_b_box,.m_u_box,.m_m_box{
+	position:absolute;
+	width:100%;
+	color: #AE8749;
+}
+
+
+.m_u_box{
+	display:none;
+}
+.m_u_box h2{
+	
+}
+.user,.manager,.book{
+	padding: 0px 10px 0 12px;
+}
+.search_user,.search_manager,.search_book{
+	height: 30px;
+line-height: 30px;
+}
+#all_users,#all_managers,#all_books,#add_book{
+	padding: 0px 16px;
+	*padding:0px;
+height: 30px;
+color: #FDFDFD;
+font-weight: bold;
+font-size: 16px;
+letter-spacing: 2px;
+background: #D6C899;
+line-height: 19px;
+}
+#add_book{
+position: absolute;
+left: 200px;	
+}
+
+.search_box{
+	height: 30px;
+	position: absolute;
+	right: 0;
+	border: 1px solid #537436;
+}
+.input{
+	width: 200px;
+	float: left;
+	border: 1px solid #fff;
+	background: #fff;
+	height: 28px;
+	padding-left: 7px;
+}
+.search_logo{
+	display: block;
+	width: 34px;
+	float: left;
+	height: 28px;
+	border: 1px solid #537436;
+	cursor:pointer;
+	text-indent:-9999px;
+	background: #fff url("../images/search.gif") no-repeat;
+}
+#user,#manager,#book{
+	width: 200px;
+outline: none;
+border: none;
+background: none;
+}
+#user_result,#manager_result,#book_result{
+	margin-top: 10px;
+border-top: 1px dashed #fff;
+padding-top: 10px;
+overflow: auto;
+height: 443px;
+width: 857px;
+}
+.search_book label{
+	font-size: 15px;
+}
+#type_books{
+	padding: 5px 2px 5px 0;
+width: 100px;
+color: #BC8749;
+background: #F4E1E1;
+}
+
+.m_b_box .types{
+	height: 30px;
+	float: left;
+	position: absolute;
+	left: 358px;
+}
+
+
+
+/* 管理员管理 */
+.m_m_box{
+	display:none;
+}
+
+
+
+/* 动态响应文件的样式呈现 */ 
+table{
+	width: 840px;
+	border: 1px solid #8BB5F5
+}
+tr{
+	height: 23px;
+text-align: center;
+}
+tr:hover{
+	background:#CCFFCC;
+	color:#499D88;
+}
+.first_tr:hover{
+	background: #BEAEAE;
+}
+.first_tr{
+	background: #BEAEAE;
+}
+
+.odd{
+	background:#E5E5E5;
+}
+.even{
+	background:#D5D5D5;
+}
+#right a{
+	text-decoration:none;
+	color:#fb301a;
+}
+#right a:hover{
+	color:#284B61;
+}
+
+
+/* 添加书籍部分样式 */
+#mengban{
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #000;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	display:none;
+}
+#addbookbox{
+	position: absolute;
+	left: 28%;
+	top: 10%;
+	background: #fff;
+	z-index: 1001;
+	width: 560px;
+	border: 3px solid #B28D52;
+	height: 424px;
+	display:none;
+}
+#addbookbox .names{
+	padding: 0 0 0 36px;
+	height: 60px;
+	line-height: 45px;
+	font-size: 25px;
+	text-align: left;
+	color: #6F715E;
+	background: #fff url("../images/login_header_img.png") repeat-x;
+	position: relative;
+}
+#addbookbox .form{
+	
+}
+#addbookbox .txt{
+	height: 35px;
+line-height: 35px;
+padding: 15px 0px 0px 25px;
+}
+#addbookbox label{
+	width: 100px;
+display: block;
+float: left;
+text-align: right;
+font-size: 16px;
+height: 30px;
+line-height: 30px;
+padding-right: 30px;
+font-weight: bold;
+}
+#addbookbox .input1{
+	height: 30px;
+float: left;
+border: 1px solid #A9A9A9;
+background: #fff;
+}
+#addbookbox span.type1 {
+	*border: none;
+}
+
+#addbookbox input[type=text]{
+	float: left;
+height: 16px;
+width: 232px;
+font-size: 14px;
+outline:0 none;
+margin: 7px 0 0 7px;
+border:0 none;
+background: none;
+color: #4D46B8;
+}
+
+input[type=submit]:hover{
+	opacity:0.8;
+	filter:alpha(opacity=80);
+}
+input[type=submit]{
+	width: 142px;
+	height: 42px;
+	background: url("../images/factor.png") no-repeat;
+	border: none;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	letter-spacing: 2px;
+	cursor: pointer;
+	font-family: \5FAE\8F6F\96C5\9ED1;
+}
+#addbookbox .btn{
+	position: relative;
+width: 152px;
+float: left;
+left: 160px;
+margin-top: 20px;
+}
+
+select.addtype {
+	border:0 none;
+	outline:0 none;
+	width: 240px;
+	color: #666695;
+	position: relative;
+	bottom: 2px;
+	padding: 6px 11px;	
+}
+.rmb{
+	float: left;
+width: 10px;
+height: 30px;
+margin-left: 7px;
+line-height: 34px;
+}
+#addbookbox .input1 input.price1{
+	width: 215px;
+}
+#addbookbox span.date_select{
+	border: none;
+position: relative;
+bottom: 3px;
+}
+#addbookbox span.date_select select{
+	width: 69px;
+height: 21px;
+margin: 0 6px 0 2px;
+}
+span.updateModel {
+	position: relative;
+	left: 9px;
+	bottom: -4px;
+	color: #F74242;
+	cursor: pointer;
+}
+span.updateModel:hover{
+	text-decoration:underline;
+}
+
+h2.names span.close_box{
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	display: block;
+	padding: 4px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	text-indent: -9999px;
+	background: #06C url("../images/close_01.png") no-repeat 4px 4px;
+}
+.warning_txt,.price_warning{
+	color: red;
+position: relative;
+left: 10px;
+}
+
+
+
+
+

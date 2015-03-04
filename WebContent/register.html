@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>用户注册</title>
+	<link rel="stylesheet" href="css/base.css" type="text/css" />
+	<link rel="stylesheet" href="css/register.css" type="text/css" />
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="js/register.js"></script>
+</head>
+<body>
+	<div id="contain" class="clearfix">
+		<div id="head" class="clearfix">
+			<div class="head_box">用户注册</div>
+		</div>
+		<div id="body" class="clearfix">
+			<div class="register_box clearfix">
+				<form action="userServlet" method="post">
+					<p class="box_1">
+						<label>用户名</label>
+						<span class="main_input">
+							<input type="text" name="username" class="text username" autocomplete="off" maxlength="28" />
+						</span>
+						<span class="warning_box porel">
+							<span class="remain">[请输入注册用户名]</span>
+							<span class="warning">
+								<em class="warning_img"></em>
+								<em class="warning_txt">警告信息</em>
+							</span>
+							<span class="success">成功</span>
+						</span>
+					</p>
+					<p class="box_2">
+						<label>密码</label>
+						<span class="main_input">
+							<input type="password" name="password" class="text" id="pwd" maxlength="24" />
+						</span>
+						<span class="warning_box porel">
+							<span class="remain">[6-24个字符组成,不能为9位以下纯数字]</span>
+							<span class="warning">
+								<em class="warning_img"></em>
+								<em class="warning_txt">警告信息</em>
+							</span>
+							<span class="success">成功</span>
+						</span>
+					</p>
+					<p class="box_3">
+						<label>确认密码</label>
+						<span class="main_input">
+							<input type="password" name="password" id="re_pwd" class="text" maxlength="24" />
+						</span>
+						<span class="warning_box porel">
+							<span class="remain">[请再次输入密码确认]</span>
+							<span class="warning">
+								<em class="warning_img"></em>
+								<em class="warning_txt">警告信息</em>
+							</span>
+							<span class="success">成功</span>
+						</span>
+					</p>
+					<p class="box_4">
+						<label>真实姓名</label>
+						<span class="main_input">
+							<input type="text" name="rel_name" id="rel_name" autocomplete="off" class="text" maxlength="20" />
+						</span>
+						<span class="warning_box porel">
+							<span class="remain">[请输入您的真实姓名]</span>
+							<span class="warning">
+								<em class="warning_img"></em>
+								<em class="warning_txt">警告信息</em>
+							</span>
+							<span class="success">成功</span>
+						</span>
+					</p>
+					<p class="box_5">
+						<label>性别</label>
+						<span class="sex">
+							<input type="radio" name="sex" id="man" class="sex_choose" checked="checked" value="男" /><label class="radio" for="man"> 男</label>
+							<input type="radio" id="woman"  class="mll sex_choose" name="sex" value="女"/><label  class="radio" for="woman"> 女</label>
+						</span>
+						<span class="warning_box porel">
+							<span class="remain">[请确认性别]</span>
+							<span class="success">成功</span>
+						</span>
+					</p>
+					<p class="box_6">
+						<label>学号</label>
+						<span class="main_input">
+							<input type="text" name="studentID" id="studentID" autocomplete="off" class="text" maxlength="20" />
+						</span>
+						<span class="warning_box porel">
+							<span class="remain">[请输入学号(10位)]</span>
+							<span class="warning">
+								<em class="warning_img"></em>
+								<em class="warning_txt">警告信息</em>
+							</span>
+							<span class="success">成功</span>
+						</span>
+					</p>
+					<p class="box_7">
+						<label>所在学院</label>
+						<span class="select">
+							<select name="depart" id="depart_select">
+								<option value="0">--&nbsp;&nbsp;请选择&nbsp;&nbsp;--</option>
+								<option value="通信学院">通信学院</option>
+								<option value="计算机学院">计算机学院</option>
+								<option value="软件工程学院">软件工程学院</option>
+								<option value="法学院">法学院</option>
+								<option value="理学院">理学院</option>
+								<option value="生物学院">生物学院</option>
+								<option value="光电学院">光电学院</option>
+								<option value="传媒学院">传媒学院</option>
+								<option value="体育学院">体育学院</option>
+								<option value="外国语学院">外国语学院</option>
+							</select>
+						</span>
+						<span class="warning_box porel">
+							<span class="remain">[请选择所在院系]</span>
+							<span class="warning">
+								<em class="warning_img"></em>
+								<em class="warning_txt">警告信息</em>
+							</span>
+							<span class="success">成功</span>
+						</span>
+					</p>
+					<p class="box_8">
+						<label>联系方式</label>
+						<span class="main_input">
+							<input type="text" name="tel" id="tel" class="text" autocomplete="off" maxlength="20" />
+						</span>
+						<span class="warning_box porel">
+							<span class="remain">[请输入联系方式]</span>
+							<span class="warning">
+								<em class="warning_img"></em>
+								<em class="warning_txt">警告信息</em>
+							</span>
+							<span class="success">成功</span>
+						</span>
+					</p>
+					<p class="box_9">
+						<label>验证码</label>
+						<span class="main_input">
+							<input type="text" name="code" id="code" class="text" autocomplete="off"/>
+						</span>
+						<span class="warning_box porel">
+							<span class="remain">[请输入验证信息(区别大小写)]</span>
+							<span class="warning">
+								<em class="warning_img"></em>
+								<em class="warning_txt">警告信息</em>
+							</span>
+							<span class="success">成功</span>
+						</span>
+					</p>
+					<p class="box_10">
+						<label>&nbsp;</label>
+						<span class="code_img">
+							<img src="images/yzm/0H03.png" alt="验证码" id="codeImg" class="codeChange" title="点击换一张">
+							<a href="javascript:;" title="点击换一张" class="codeChange" id="codeChange">点击换一张</a>
+						</span>
+					</p>
+					<p class="box_11">
+						<label>&nbsp;</label>
+						<span class="sub">
+							<input type="submit" id="submit" value="立即注册" />
+							
+						</span>
+					</p>
+				</form>
+			</div>
+		</div>
+		<div id="foot" class="clearfix">
+		<a href="index.jsp" class="a return_index">返回首页</a>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+#username{
+	color:red;
+}
+#body{
+	background: #fff url("../images/welcome_bg.jpg") no-repeat top center;
+	height: 882px;
+}
+#nowdate a.unenter{
+	  font-size: 12px;
+    height: 22px;
+    line-height: 22px;
+    position: absolute;
+    right: -54px;
+    top: 12px;
+    color: #686569;
+}
+#nowdate a.unenter:hover{
+	 color: #000040;
+}

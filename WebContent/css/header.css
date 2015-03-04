@@ -1,0 +1,297 @@
+
+body{
+	font-family:Arial;
+	font-size:13px;
+	background:#fff url("../images/body_bg.png") repeat-x;
+	margin:0;
+	padding-top:5px;
+	position:relative;
+}
+
+
+#container{
+	width:1080px;
+	color:#666;
+}
+
+
+/*========= 头部 ==========*/
+div#clock_canvas {
+background: none;
+width: 200px;
+height: 200px;
+position: absolute;
+right: 70px;
+top: 10px;
+}
+#header{
+	height:240px;
+	border-left:1px solid #aaa;
+	border-right:1px solid #aaa;
+	background: #F7F3EC url("../images/1751.png");
+	z-index: 15;
+}
+.header_border{
+	height:10px;
+	text-indent:-9999px;
+	background:url("../images/bg_tb.gif") repeat-x;
+}
+.header_box{
+	padding: 10px 20px 0 0;
+}
+.header_box span{
+	float: right;
+	cursor: pointer;
+	display: block;
+	width: 26px;
+	text-align: center;
+}
+.header_box  .cu_none{
+	cursor:auto;
+}
+	color:#666;
+	width: 50px;
+	text-align: center;
+}
+.header_box  span:hover{
+	cursor:pointer;
+	color:#2232A1;
+}
+.header_box .register{
+	color:#666;
+}
+#logo{
+	position:absolute;
+	top:70px;
+	left:20px;
+}
+#logo img{
+	border:none;
+}
+#login_box{
+	width: 100%;
+	height: 30px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	text-align:center;
+	line-height:30px;
+	font-size:14px;
+	font-weight:bold;
+}
+#nowdate{
+	width: 241px;
+	height: 30px;
+	background: url("../images/bg_t.gif") no-repeat;
+	display: block;
+	float: left;
+}
+#login_box>ul{
+	display: block;
+	float: right;
+	color:#E8E1BB;
+}
+#login_box>ul>li{
+	float: right;
+	list-style-type: none;
+	display: block;
+	width: 89px;
+	cursor: pointer;
+	background: #AE8749;
+}
+#login_box>ul>li>ul{
+	padding-left: 0;
+	background:#F0EEEE;
+}
+#login_box>ul>li>ul>li{
+	list-style: none;
+	border-bottom: 1px dashed #D06;
+}
+#login_box>ul>li>ul .last{
+	border:none;
+}
+#login_box>ul>li>ul>li a{
+	color: #688;
+
+}
+#login_box>ul>li>ul>li a:hover{
+	background-color:#918888;
+	color:#F0EEEE;
+}
+#login_box>ul>li:hover{
+	color: #AE8749;
+	background:url("../images/bg_tm.gif") no-repeat;
+}
+#login_box ul li a{
+	text-decoration:none;
+	display:block;
+	width: 89px;
+	color: #525286;
+}
+#login_box ul.second{
+	display:none;
+}
+#login_box>ul>li:hover ul.second{
+	display:block;
+}
+
+
+
+
+/* 登录窗口，锁定窗口 */
+#lock_screen{
+	position:absolute;
+	background:#ddd;
+	z-index:30;
+}
+
+#enter_box{
+	display:block;
+	width:450px;
+	height:370px;
+	position:absolute;
+	background:#fff;
+	z-index:31;
+	left:50px;
+	border:1px solid #999;
+	display:none;
+}
+#enter_box h2{
+	display: block;
+	height: 45px;
+	background:#fff url("../images/login_header_img.png") repeat-x;
+	border-bottom: 2px solid #999;
+	cursor: move;
+}
+#enter_box h2 .log_logo{
+	text-indent:-9999px;
+	float: left;
+	display: block;
+	width:22px;
+	height:22px;
+	background-image:url("../images/pass_login_icons.png");
+	background-position: -137px 105px;
+}
+#enter_box h2 div{
+	display: block;
+	width: 120px;
+	float: left;
+	position: relative;
+	top: 10px;
+}
+
+#errormessage{
+	height: 41px;
+	*margin-top:2px;
+	*height:28px;		/* 此处为兼容ie7 */
+	*line-height: 28px;
+	line-height: 41px;
+	font-size: 14px;
+}
+#enter_box .close_img{
+	position: absolute;
+	right: 10px;
+	top: 5px;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	background: #999;
+	cursor:pointer;
+}
+
+.log_content{
+	width: 360px;
+}
+#enter_box .uam{
+	height: 36px;
+	border: 1px solid #ddd;
+	padding: 15px 0px 0 12px;
+}
+
+#enter_box .uam label.user,#enter_box .uam label.pwd{
+	display:block;
+	width:24px;
+	height:24px;
+	float:left;
+	text-indent:-9999px;
+	background-image:url("../images/input_icons.png");
+	background-repeat:no-repeat;
+}
+#enter_box .uam label.user{
+	background-position: 0px -111px;
+}
+#enter_box .uam label.pwd{
+	background-position: 0 -190px;
+}
+
+
+#enter_box .uam input{
+	border: 0;
+	outline: none;
+	width: 290px;
+	height: 20px;
+	font-size: 16px;
+	color: #555;
+	text-indent: 8px;
+}
+#enter_box .check{
+	
+}
+#enter_box .check label{
+	font-size: 12px;
+}
+#enter_box .check input{
+	width: 16px;
+	height: 16px;
+	vertical-align: middle;
+}
+#enter_box .check a{
+	display: block;
+float: right;
+color: #685;
+position: absolute;
+right: 0;
+top: 3px;
+}
+#enter_box .check a:hover{
+	color: #608;
+}
+#enter_box .login_sub{
+	height: 40px;
+	text-align: center;
+}
+#enter_box .login_sub input{
+	height: 40px;
+	width: 360px;
+	color: #faa;
+	border: none;
+	background: #A74DC5;
+	font-size: 18px;
+	font-weight: bold;
+	cursor:pointer;
+}
+#enter_box .login_sub input:hover{
+	opacity:0.8;
+	filter:alpha(opacity = 80);
+}
+#lock_screen{
+	display:none;
+	position:absolute;
+	left:0;
+	top: 0;
+	background-color:#000;
+	opacity:0.5;
+	filter:alpha(opacity = 50);
+	
+}
+
+
+
+
+
+
+
+
+
+
+

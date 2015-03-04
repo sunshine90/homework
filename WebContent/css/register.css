@@ -1,0 +1,207 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	color:#666;
+	background:#F4F4C2 url("../images/59798_top.jpg") no-repeat;
+}
+a{
+	text-decoration:none;
+}
+em{
+	font-style:normal;
+}
+#contain{
+	width:100%;
+	overflow:hidden;
+}
+
+/* 注册 === 头部分 */
+#head{
+	height: 150px;
+}
+
+.head_box{
+	color: #6FBD35;
+	width: 920px;
+	margin: 0px 0 0 227px;
+	line-height: 150px;
+	font-size: 39px;
+	font-family: \5FAE\8F6F\96C5\9ED1;
+	background:url("../images/bg_01.png") no-repeat  87px -45px;
+}
+
+/* 注册 === body部分 */
+#body{
+	font-weight: 600;
+	color: #85BD35;
+}
+
+/* 注册 === 登录框部分 */
+.register_box{
+	width: 860px;
+}
+.register_box form{
+	
+}
+.register_box p{
+	height: 35px;
+	padding-bottom: 30px;
+}
+.register_box label{
+	width: 150px;
+	display: block;
+	float: left;
+	text-align: right;
+	font-size: 16px;
+	height: 35px;
+	line-height: 35px;
+	padding-right: 30px;
+}
+.register_box .text{
+	float: left;
+	height: 16px;
+	width: 300px;
+	font-size: 14px;
+	outline: none;
+	margin: 8px 0 0 7px;
+	border:0 none;
+}
+.main_input{
+	height: 35px;
+	float: left;
+	border: 1px solid #A9A9A9;
+	background: #fff;
+}
+
+.sex, .select ,.code_img ,.sub{
+	float: left;
+	display: block;
+	height: 35px;
+	line-height: 35px;
+}
+.sex{
+	width: 309px;
+}
+.register_box select{
+	width: 309px;
+	color: #777;
+	outline: 0 none;
+	font-size: 14px;
+	padding: 8px 8px;
+}
+.box_5 .sex .radio{
+	display: block;
+	float: left;
+	width: 20px;
+	cursor: pointer;
+}
+.box_5 .sex .sex_choose{
+	float: left;
+	margin: 11px 5px 0 20px;
+	cursor: pointer;
+}
+#codeImg{
+	cursor: pointer;
+}
+#codeChange{
+	font-size: 13px;
+	margin: 0 0 0 20px;
+	color: #A291F4;
+}
+#codeChange:hover{
+	color:#816BEA;
+}
+#submit{
+	width: 142px;
+	height: 42px;
+	background: url("../images/factor.png") no-repeat;
+	border: none;
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+	letter-spacing: 2px;
+	cursor: pointer;
+	font-family: \5FAE\8F6F\96C5\9ED1;
+}
+#submit:hover{
+	opacity:0.8;
+	filter:alpha(opacity=80);
+	font-family: \5FAE\8F6F\96C5\9ED1;
+	border:none;
+}
+
+/* 注册 === 文本提示部分 */
+.warning_box{
+	height: 37px;
+	width: 340px;
+	float: left;
+	line-height: 37px;
+	margin-left: 20px;
+}
+.warning_box span{
+	position:absolute;
+}
+/* 提醒文字框架 */
+.warning_box .remain{
+	display:none;
+}
+.warning_box .warning_img,.warning_box .success{
+	float: left;
+	width: 30px;
+	height: 28px;
+	margin-top: 5px;
+}
+/* 警告文字框架 */
+.warning_box .warning{
+	text-indent: 8px;
+	display:none;
+}
+.warning_box .warning_img{
+	background: url("../images/factor.png") no-repeat -171px 0px;
+}
+/* 成功文字框架 */
+.warning_box .success{
+	background: url("../images/factor.png") no-repeat -141px 0px;
+	text-indent: -9999px;
+	display:none;
+}
+
+
+
+
+
+
+
+
+
+
+/* 注册 === foot部分 */
+#foot{
+	height:100px;
+}
+
+.return_index{
+	text-align: center;
+background: #65AA6B;
+color: #fff;
+width: 128px;
+font-size: 18px;
+font-weight: bold;
+height: 40px;
+line-height: 40px;
+margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+

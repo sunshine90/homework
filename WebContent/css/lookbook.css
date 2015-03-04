@@ -1,0 +1,116 @@
+/*
+	管理员对书籍的管理界面样式
+*/
+
+
+.form{
+	width: 1078px;
+border: 1px solid #AAA;
+border-bottom: none;
+border-top: none;
+background: #F0EDE4;
+}
+
+form{
+	width: 500px;
+}
+.txt{
+	height: 50px;
+float: left;
+padding: 10px 0px 1px 0px;
+}
+label{
+	width: 100px;
+display: block;
+float: left;
+text-align: right;
+font-size: 16px;
+height: 35px;
+line-height: 35px;
+padding-right: 30px;
+font-weight: bold;
+}
+.input{
+	height: 35px;
+float: left;
+border: 1px solid #A9A9A9;
+background: #fff;
+}
+input[type=text]{
+	float: left;
+height: 16px;
+width: 270px;
+font-size: 14px;
+outline: none;
+margin: 8px 0 0 7px;
+border: none;
+background: none;
+color: #4D46B8;
+}
+.xiugai{
+	float: left;
+width: 50px;
+margin-top: 18px;
+padding-left: 20px;
+cursor: pointer;
+color: #AE8749;
+}
+.xiugai:hover{
+	color:red;
+}
+input[type=submit]{
+	width: 142px;
+height: 42px;
+background: url("../images/factor.png") no-repeat;
+border: none;
+font-size: 20px;
+color: #fff;
+text-align: center;
+letter-spacing: 2px;
+cursor: pointer;
+font-family: \5FAE\8F6F\96C5\9ED1;
+}
+input[type=submit]:hover{
+	opacity:0.8;
+	filter:alpha(opacity=80);
+}
+.btn{
+	position: relative;
+left: 194px;
+padding: 10px 0;
+}
+.names{
+	padding: 40px 0 15px 0;
+font-size: 25px;
+text-align: center;
+color: #aaa;
+}
+.returnback{
+	width: 90px;
+height: 30px;
+line-height: 30px;
+position: absolute;
+left: 80px;
+top: 13px;
+background: #AE8749;
+color: #E8E1A2;
+font-size: 20px;
+border-radius: 5px;
+box-shadow: 2px 3px #808080;
+}
+.returnback:hover{
+	background: #E8E1A2;
+color: #AE8749;
+border-radius: 5px;
+box-shadow: -2px -3px #ff8080;
+}
+
+
+
+
+
+
+
+
+
+

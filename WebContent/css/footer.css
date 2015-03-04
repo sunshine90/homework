@@ -1,0 +1,27 @@
+
+
+/*========= 脚部分 ==========*/
+
+#footer{
+	width: 1078px;
+	height: 100px;
+	background-color: #F0EDE4;
+	text-align: center;
+	border-right: 1px solid #AAA;
+	border-left: 1px solid #AAA;
+	padding-top: 16px;
+}
+#footer p{
+	height: 25px;
+	line-height: 25px;
+}
+.footer_img{
+	position: absolute;
+	bottom: 0;
+	left:0;		/* 在ie7上必须写上left的值，不然会默认中间 */
+	text-indent: -9999px;
+	background: #ECDDDD url("../images/bg_tb.gif") repeat-x;
+	height: 10px;
+	width: 1078px;
+}
+
